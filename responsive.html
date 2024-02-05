@@ -2,8 +2,8 @@
 =========================================================
 Name        : index.html
 Assignment  : Lab 4 Exercise B
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Hana Hassan, Mariam Ibrahim
+Submission  : Feb 5, 2024
 Description : Responsive Layouts.
 =========================================================
 -->
@@ -17,11 +17,11 @@ Description : Responsive Layouts.
 	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- First, link the menu.css file here -->
+	<link rel="stylesheet" type="text/css" href="menu.css">
 
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
-		div {
+		/* div {
 			border: 1px dashed gray;	
 		}
 		.row{ 
@@ -35,7 +35,7 @@ Description : Responsive Layouts.
 		}
 		.small {
 			border: 1px solid yellow;	
-		}		
+		}		 */
 	</style>
 
     <style>
@@ -48,38 +48,76 @@ Description : Responsive Layouts.
         .news-item { padding: 10px; }
 		
 		.row { 
-			/*I need some CSS codes.*/		
+			display: table;
+			clear:both;
+			width: 100%		
 		}
 
 		.large, .medium, .small {
-			/*I need some CSS codes.*/
+			float: left;
+			box-sizing: border-box;
+            margin-bottom: 10px;
+            width: 100%;
 		}
 		
 		.gap {
+			clear: both;
+			height: 20px;
 			/*I need some CSS codes.*/
 		}
 
 		@media screen and (min-width: 769px) {			
 			.large { 
-				/*I need some CSS codes.*/
+				width: 100%;
 			}
 			.medium { 
-				/*I need some CSS codes.*/
+				width: 70%;
 			}
 			.small { 
-				/*I need some CSS codes.*/
-			 }
-		}
+				width: 30%;
+			 }   
+			}
 
         @media screen and (max-width: 768px) {
-            /*I need some CSS codes.*/
+			.large { 
+				width: 100%;
+			}
+			.medium { 
+				width: 60%;
+			}
+			.small { 
+				width: 40%;
+			 }
+
+			.menu {
+				display: inline-block;
+				width: 100%;
+			}
+
+			.main {
+				margin-left: 0px;
+			}
+
         }
 
         @media screen and (max-width: 480px) {
-			/*I need some CSS codes.*/
-        }
+			.large { 
+				width: 100%;
+			}
+			.medium { 
+				width: 100%;
+			}
+			.small { 
+				width: 100%;
 
-        
+			 }
+
+			h1 {
+				font-size: 18px;
+			 }
+			}
+
+        /* floats and box sizing */
     </style>
 </head>
 <body>
