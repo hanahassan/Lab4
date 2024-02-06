@@ -1,6 +1,6 @@
 # Project Overview
-* responsive.html utiized css to ...
-* flex.html utilized css to ...
+* responsive.html utiized css to improve the format. Additionally, we practiced using media querie and learned new skills.
+* flex.html utilized css to build out a similar format to responsive.html. But instead we imporoved our skills with flexbox.
 ## Team Members 
 
 |   Name    |
